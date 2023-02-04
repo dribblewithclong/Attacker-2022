@@ -293,9 +293,9 @@ def predict_from_user(
     
     predicted_data = model_predictions(prepared_data)
 
-    return predicted_data
+    return predicted_data, prepared_data
 
-prediction = predict_from_user(
+prediction, d = predict_from_user(
     cat_3=1,
     cat_6=1,
     cat_8='HG',
@@ -311,10 +311,10 @@ prediction = predict_from_user(
     unknown_var_9=15.500000,
     unknown_var_13=0.91,
     unknown_var_17=3993.0,
-    social_friend_count=np.nan,
+    social_friend_count=100,
     dob=19751110.0,
-    time_1='2018-12-19T01:59:10.7Z',
-    time_2='2018-12-19T08:32:24Z',
+    time_1='2018-12-19',
+    time_2='2018-12-19',
     date_2='12/19/2018',
     date_3='1/1/2015'
 )
