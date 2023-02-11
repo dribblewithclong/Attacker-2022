@@ -15,6 +15,8 @@ from sklearn.tree import DecisionTreeClassifier
 
 import numpy as np
 
+css_code='body{background-image:url("https://picsum.photos/seed/picsum/200/300");}'
+
 # Load the saved model from disk
 model_path = 'model.joblib'
 model = joblib.load(model_path)
